@@ -33,9 +33,9 @@ archive_generator:
 主题较为粗糙简陋，若您想修改增添功能，需要对 Hexo 有一定了解.
 
 ## 增加功能 （More Functions）
-This theme bases on [Even](https://github.com/ahonn/hexo-theme-even)
+This theme base on [Even](https://github.com/ahonn/hexo-theme-even)
 
-You can find more functions at [Even](https://github.com/ahonn/hexo-theme-even)
+You can find more functions at [Even](https://github.com/ahonn/hexo-theme-even),
 copy and change codes as you want.
 
 如：赞赏（Reward）、底部版权(Copyright)、社交图标(Social icon)
