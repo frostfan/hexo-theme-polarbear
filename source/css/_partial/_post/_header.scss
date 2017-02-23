@@ -1,0 +1,27 @@
+.post-header {
+  .post-title {
+    margin: 0 0 10px;
+    line-height: 1.4;
+    font-size: $post-title-font-size;
+    font-weight: $post-title-font-weight;
+    font-family: $global-font-family;
+  }
+
+  .post-link {
+    @include underline-from-center;
+  }
+
+}
+
+.post-time {
+    color: $post-time-font-color;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+ }
+
+ .post-excerpt {
+     p {
+         margin: 0 0 16px;
+     }
+ }

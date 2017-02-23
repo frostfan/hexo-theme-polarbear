@@ -1,0 +1,27 @@
+#content {
+    margin: $global-content-margin;
+    width: 90%;
+	max-width: $global-body-width;
+}
+
+#primary.home {
+    width: 73%;
+    float: left;
+}
+
+#primary {
+    max-width: 850px;
+    margin: $global-content-margin;
+}
+
+@include max-screen() {
+  .site-header-inner, .content {
+    width: 90%;
+  }
+  #secondary {
+      display: none;
+  }
+  #primary.home {
+      width: 100%;
+  }
+}

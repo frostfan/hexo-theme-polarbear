@@ -1,0 +1,26 @@
+// ==============================
+// Post
+// ==============================
+
+.posts {
+  margin-bottom: $post-list-margin-bottom;
+  border-bottom: $post-border;
+}
+
+.post {
+  padding: $post-padding;
+
+  & + .post {
+    border-top: $post-border;
+  }
+
+  .post-excerpt {
+      img {
+          padding-top: .5em;
+      }
+  }
+
+  @import '_post/header';
+  @import '_post/content';
+  @import '_post/footer';
+}

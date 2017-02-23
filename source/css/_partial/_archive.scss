@@ -1,0 +1,79 @@
+// ==============================
+// Archive
+// =============================
+
+.archive {
+  margin: $archive-margin;
+  line-height: 1.6;
+
+  .archive-post+.collection-title {
+      margin-top: 30px;
+  }
+
+  .archive-title {
+    font-family: $global-font-family;
+
+    &.tag,
+    &.category {
+      margin: 15px 0;
+    }
+
+    .archive-name {
+      margin: 0;
+      display: inline-block;
+      font-weight: 400;
+      font-size: $archive-name-font-size;
+      line-height: $archive-name-font-size + 2px;
+    }
+  }
+
+  .collection-title {
+    font-family: $global-font-family;
+    font-size: $archive-name-font-size;
+
+    .archive-year {
+      margin: 18px 0;
+      font-weight: 400;
+      font-size: $collection-title-font-size;
+      line-height: $collection-title-font-size + 5px;
+    }
+  }
+
+  .archive-post {
+    margin: 15px 0;
+
+    .archive-post-time {
+      float: left;
+      overflow: hidden;
+      color: #aaa;
+      font-size: 14px;
+      line-height: 25px;
+      display: block;
+    }
+
+    .archive-post-title {
+        margin-left: 85px;
+        display: block;
+        .archive-post-link {
+        color: rgb(51, 51, 51);
+        }
+    }
+
+    &::first-child {
+      margin-top: 20px;
+    }
+
+    &:hover {
+      transition: $archive-post-hover-transition;
+      transform: $archive-post-hover-transform;
+
+      .archive-post-time {
+        color: $theme-color;
+      }
+
+      .archive-post-title .archive-post-link {
+        color: $theme-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+// ==============================
+// Post content
+// ==============================
+
+.post-content {
+  margin-bottom: $content-margin-bottom;
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-size: 1.3em;
+      font-weight: 400;
+      font-family: $global-font-family;
+      margin-top: 1.2em;
+    }
+  }
+
+  .headerlink {
+    &:hover {
+      border-bottom: 0;
+    }
+
+    &::before {
+      margin-right: 5px;
+      font-size: 1.1em;
+      color: $theme-color;
+    }
+  }
+
+  a {
+    color: $theme-color;
+    word-break: break-all;
+
+    &:hover {
+      border-bottom: $content-link-border;
+    }
+
+    &.fancybox {
+      border: 0;
+    }
+  }
+
+  blockquote {
+    margin: 2em 0;
+    padding-left: 10px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+    border-left: 2px solid #aaa;
+    p {
+      margin: 0;
+    }
+  }
+
+  img {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  > table {
+    max-width: 100%;
+    margin: 10px 0;
+    border-spacing: 0;
+
+    th, td {
+      padding: 5px 15px;
+      border: 1px double $content-table-border-color;
+      text-align: left;
+    }
+  }
+
+  @import 'code';
+
+  .read-more {
+    .read-more-link {
+      color: $theme-color;
+      font-size: 1.1em;
+      font-family: $global-font-family;
+
+      &:hover {
+        border-bottom: $post-readMore-border-bottom;
+      }
+    }
+  }
+}

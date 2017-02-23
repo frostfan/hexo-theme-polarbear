@@ -1,0 +1,25 @@
+{
+  "name": "hexo-theme-polarbear",
+  "version": "1.0",
+  "description": "A light theme base on Even, inspired by Giuem",
+  "main": "index.js",
+  "keywords": [
+    "responsive",
+    "widget",
+    "simple",
+    "light"
+  ],
+  "author": "Frost Fan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahonn/hexo-theme-even.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahonn/hexo-theme-even/issues"
+  },
+  "homepage": "https://github.com/ahonn/hexo-theme-even#readme",
+  "devDependencies": {
+    "eslint": "^3.12.0"
+  }
+}

@@ -1,0 +1,22 @@
+// ==============================
+// Post footer
+// =============================
+
+.footer {
+  margin-top: $footer-margin-top;
+}
+
+#colophon {
+	width: 90%;
+	margin: 30px auto 0;
+	padding: 20px 0;
+	border-top: 1px solid #e1e1e1;
+    color: $dark-gray;
+	font-size: 14px;
+    max-width: $global-body-width;
+	display: block;
+    overflow: hidden;
+    a {
+        color: $dark-gray;
+    }
+}

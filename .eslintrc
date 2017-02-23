@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "globals": {
+    "$": true,
+    "Theme": true,
+    "themeConfig": true
+  },
+  "extends": "eslint:recommended"
+}

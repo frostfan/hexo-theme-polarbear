@@ -1,0 +1,258 @@
+// ==============================
+// Variables
+// ==============================
+
+// ========== Theme Color ========== //
+// Theme color config from `polarbear/_config.yml`
+$theme-color-config: hexo-theme-config('theme.color');
+
+// Default theme color map
+$theme-color-map: (
+  'Default': #4D89FB #F8F8F8,
+  'Mint Green': #16982B #f5f5f5,
+  'Cobalt Blue': #0047AB #f0f2f5,
+  'Hot Pink': #FF69B4 #f8f5f5,
+  'Dark Violet': #9932CC #f5f4fa
+);
+
+// Check theme color config.
+// if it does not exist, use default theme color.
+@if not(map-has-key($theme-color-map, $theme-color-config)) {
+  $theme-color-config: 'Default';
+}
+$theme-color-list: map-get($theme-color-map, $theme-color-config);
+
+// Default theme color of the site.
+$theme-color: nth($theme-color-list, 1) !default;
+
+// Deputy theme color of the site.
+$deputy-color: nth($theme-color-list, 2) !default;
+
+
+// ========== Color ========== //
+$black: #0a0a0a !default;
+$white: #fefefe !default;
+$light-gray: #eee !default;
+$gray: #cacaca !default;
+$dark-gray: #aaa !default;
+
+
+// ========== Global ========== //
+// Text color of the body.
+$global-font-color: rgba(0, 0, 0, 0.75) !default;
+
+// Font size attribute applied to '<html>' and '<body>'.
+$global-font-size: 16px !default;
+
+// Global width of '<body>'.
+$global-body-width: 1000px !default;
+
+// Global width of '<content>'.
+$global-content-width: 750px !default;
+
+
+// Padding of container main
+$global-container-padding: 0 20px !default;
+
+// Margin of content and site-header-inner
+$global-content-margin: 0 auto !default;
+
+// Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
+$global-lineheight: 1.5 !default;
+
+// Font family of the site.
+$global-font-family: "Open Sans","PingFang SC","Hiragino Sans GB","Microsoft Yahei","Microsoft Jhenghei",sans-serif !default;
+
+// Background color of the site.
+$global-background: $white !default;
+
+// Headings font size of the site.
+$global-headings: (
+  h1: 1.5rem,
+  h2: 1.4rem,
+  h3: 1.3rem,
+  h4: 1.2rem,
+  h5: 1.1rem,
+  h6: 1rem
+) !default;
+
+
+// ========== Header ========== //
+// Padding of the site header.
+$header-padding: 20px 20px !default;
+
+//Font size of the site title.
+$site-title-size: 24px !default;
+
+// Header-height.
+$site-header-height: 65px !default;
+
+
+// ========== Post ========== //
+// Margin bottom of post list.
+$post-list-margin-bottom: 20px !default;
+
+// Padding of the post.
+$post-padding: 40px 0 !default;
+
+// Border top of the post + post.
+$post-border: 1px solid $light-gray !default;
+
+// Font size of post title.
+$post-title-font-size: 1.3em !default;
+
+// Font weight of post title.
+$post-title-font-weight: 400 !default;
+
+// Margin top of the post meta (post time).
+$post-meta-margin-top: 5px !default;
+
+// Font color of the post time.
+$post-time-font-color: $dark-gray !default;
+
+// Border bottom of the read more link when hover it.
+$post-readMore-border-bottom: 1px solid $theme-color !default;
+
+// Margin top of the post footer.
+$post-footer-margin-top: 20px !default;
+
+// Border top of post footer.
+$post-footer-border-top: 1px solid $light-gray !default;
+
+// Padding of the post tags.
+$post-tags-padding: 15px 0 !default;
+
+// Font size of post pagination.
+$post-nav-font-size: 18px !default;
+
+// ========== Content ========== //
+
+// Border bottom of the link when hover it.
+$content-link-border: 1px solid $theme-color !default;
+
+// Background color of the blockquote.
+$content-blockquote-backgroud: rgba($theme-color, 0.05) !default;
+
+// Border left of the blockquote.
+$content-blockquote-border-left: 3px solid rgba($theme-color, 0.3) !default;
+
+// Border color of the table.
+$content-table-border-color: darken($deputy-color, 3%) !default;
+
+$content-margin-bottom: 40px !default;
+
+// ========== Code ========== //
+// Color of the code.
+$code-color: #000 !default;
+
+// Font size of code.
+$code-font-size: 13px !default;
+
+// Font family of the code.
+$code-font-family: "Open Sans","PingFang SC","Hiragino Sans GB","Microsoft Yahei","Microsoft Jhenghei",sans-serif !default;
+
+// Color of code highlight, solarized.
+$code-highlight-color: (
+  comment: #93a1a1,
+  keyword: #859900,
+  number: #2aa198,
+  name: #268bd2,
+  attribute: #b58900,
+  symbol: #cb4b16,
+  built_in: #dc322f
+) !default;
+
+// Code type list.
+$code-type-list: (
+  html: "HTML",
+  js: "JavaScript",
+  bash: "Bash",
+  css: "CSS",
+  scss: "Scss",
+  java: "Java",
+  xml: "XML",
+  python: "Python",
+  json: "JSON",
+  swift: "Swift",
+  ruby: "Ruby",
+  php: "PHP",
+  c: "C",
+  cpp: "C++",
+  scheme: "Scheme",
+  objectivec: "Objective-C",
+  yml: "YAML",
+  stylus: "Stylus"
+) !default;
+
+// Color of the code background.
+$code-background: $deputy-color !default;
+
+
+// ========== Pagination ========== //
+// Padding of the pagination.
+$pagination-padding: 1.2em !default;
+
+// Font size of the pagination (Without post, post pagination see line 140).
+$pagination-font-size: 16px !default;
+
+
+// ========== Footer ========== //
+// Margin top of the footer.
+$footer-margin-top: 2em !default;
+
+// ========== Archive ========== //
+// Margin of the archive.
+$archive-margin: 2em 0px !default;
+
+// Max width of the archive.
+$archive-max-width: 550px !default;
+
+// Font size of the archive name.
+$archive-name-font-size: 29px !default;
+
+// Font size of the collection title.
+$collection-title-font-size: 29px !default;
+
+// Padding of the archive post.
+$archive-post-padding: 3px 20px !default;
+
+// Padding of the archive post in mobile.
+$archive-post-mobile-padding: 5px 10px !default;
+
+// Font size of the archive post time in mobile.
+$archive-post-mobile-time-font-size: 13px !default;
+
+// Border left of the archive post, use $archive-post-hover-border-left when hover it.
+$archive-post-border-left: 1px solid $gray !default;
+$archive-post-hover-border-left: 3px solid $theme-color !default;
+
+// Transition of the archive post when hover it.
+$archive-post-hover-transition: 0.2s ease-out !default;
+
+// Transform of the archive post when hover it.
+$archive-post-hover-transform: translateX(4px) !default;
+
+
+// ========== Tags ========== //
+// Font soze of the tag cloud title.
+$tag-cloud-title-size: 18px !default;
+
+// Border bottom of the tag cloud title.
+$tag-cloud-title-border-bottom: 2px solid $theme-color !default;
+
+// Margin of the tag cloud tags link.
+$tag-cloud-tags-link-margin: 5px 10px !default;
+
+
+// ========== Categories ========== //
+// Font soze of the categories title.
+$categories-title-size: 18px !default;
+
+// Border bottom of the categories title.
+$categories-title-border-bottom: 2px solid $theme-color !default;
+
+// Margin of the categories tags link.
+$categories-tags-link-margin: 5px 10px !default;
+
+// Font size of the category count
+$category-count-font-size: 12px !default;

@@ -1,0 +1,60 @@
+// ==============================
+// Header
+// ==============================
+
+.header {
+  @include clearfix;
+  padding: $header-padding;
+}
+
+
+@include max-screen() {
+  .header {
+    padding: 20px 0 0;
+    text-align: center;
+  }
+}
+
+#masthead {
+    z-index: 9;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 0 1px rgba(0,0,0,.15);
+}
+
+.site-header-inner {
+    height: $site-header-height;
+    line-height: $site-header-height;
+    max-width: $global-body-width;
+    margin: $global-content-margin;
+    width: 90%;
+}
+
+.site-title {
+    text-align: left;
+    display: inline-block;
+    margin: $global-content-margin;
+    font-weight: 400;
+    font-size: $site-title-size;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#nav-top {
+    float: right;
+    
+    .nav-top-items {
+        list-style: none;
+        padding-left: 0px;
+    	margin: 0 auto;
+
+        .menu-item {
+        	font-size: $global-font-size;
+        	margin-left: 30px;
+        	display: inline-block;
+            a {
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+}
