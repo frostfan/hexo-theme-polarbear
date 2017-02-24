@@ -9,7 +9,7 @@
 ## 安装使用（Installation）
 ```
 $ npm install install hexo-renderer-scss --save
-$ git clone https://github.com/frostfan/hexo-theme-polarbear themes/even
+$ git clone https://github.com/frostfan/hexo-theme-polarbear themes/polarbear
 ```
 
 修改（Change） polarbear/config.yml `theme: polarbear`
