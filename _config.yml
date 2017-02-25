@@ -21,6 +21,22 @@ menu:
   About: /about
 
 # ===========================================
+# Widget Settings
+# ===========================================
+# widget function
+# false: disable
+# widget_custom: custom your widget
+#   title: your widget title
+#   content: Add your html code in here. Example: <p>Hello, I am Frost</p>
+widget:
+  Tags: true
+  Categories: false
+
+widget_custom:
+    title:
+    content:
+
+# ===========================================
 # Theme Settings
 # ===========================================
 # theme styling
@@ -47,4 +63,4 @@ disqus_shortname:
 # ===========================================
 # Version
 # ===========================================
-version: 1.0
+version: 1.1
