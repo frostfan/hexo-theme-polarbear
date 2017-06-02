@@ -23,7 +23,7 @@
 
 {# Theme styling #}
 <link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+{# <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'> #}
 {# Fancybox styling #}
 {% if theme.theme.fancybox %}
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/fancybox/jquery.fancybox.css') }}" />
