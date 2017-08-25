@@ -35,13 +35,15 @@
             </div>
           {% endif %}
 
-    {% if post.tags and post.tags.length and not is_home() %}
+    {% if not is_home() %}
       <footer class="post-footer">
-        <div class="post-tags">
-          {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
-          {% endfor %}
-        </div>
+		{% if post.tags and post.tags.length %}
+		<div class="post-tags">
+		  {% for tag in post.tags %}
+			<a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
+		  {% endfor %}
+		</div>
+		{% endif %}
 
         {# Post Pagination #}
         {% include "../_partial/pagination.swig" %}
