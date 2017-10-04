@@ -1,6 +1,6 @@
 # hexo-theme-polarbear
 
-> A light theme base on Even, designed by Giuem.
+> A light theme bases on Even, designed by Giuem.
 
 [在线预览 Demo](https://d2fan.com)
 
@@ -20,7 +20,7 @@ $ git clone https://github.com/frostfan/hexo-theme-polarbear themes/polarbear
 ## Themes: http://hexo.io/themes/
 theme: polarbear
 
-# 在归档页面显示所有文章 （Show all articles at archive page.）
+# 在归档页面显示所有文章 （Show all articles on archive page.）
 # 需要安装(Need to install) hexo-generator-archive 插件支持
 archive_generator:
     per_page: 0
@@ -40,14 +40,15 @@ The theme is relatively simple and rough, have a certain understanding of Hexo b
 # false: disable
 # widget_custom: custom your widget
 #   title: your widget title
-#   content: Add your html code in here. Example: <p>Hello, I am Frost</p>
+#   content: Add your html code in here. Example: <p>testing...</p>
 widget:
   Tags: true
   Categories: false
+  Custom: false
 
 widget_custom:
-    title:
-    content:
+    title: Test
+    content: <p>testing...</p>
 ```
 
 ## 增加功能 （More Functions）

@@ -27,14 +27,15 @@ menu:
 # false: disable
 # widget_custom: custom your widget
 #   title: your widget title
-#   content: Add your html code in here. Example: <p>Hello, I am Frost</p>
+#   content: Add your html code in here. Example: <p>testing...</p>
 widget:
   Tags: true
   Categories: false
+  Custom: false
 
 widget_custom:
-    title:
-    content:
+    title: Test
+    content: <p>testing...</p>
 
 # ===========================================
 # Theme Settings

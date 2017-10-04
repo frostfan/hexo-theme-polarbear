@@ -13,12 +13,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahonn/hexo-theme-polarbear.git"
+    "url": "git+https://github.com/frostfan/hexo-theme-polarbear.git"
   },
   "bugs": {
-    "url": "https://github.com/ahonn/hexo-theme-polarbear/issues"
+    "url": "https://github.com/frostfan/hexo-theme-polarbear/issues"
   },
-  "homepage": "https://github.com/ahonn/hexo-theme-polarbear#readme",
+  "homepage": "https://github.com/frostfan/hexo-theme-polarbear#readme",
   "devDependencies": {
     "eslint": "^3.12.0"
   }
