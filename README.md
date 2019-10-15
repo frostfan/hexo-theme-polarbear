@@ -1,39 +1,51 @@
 # hexo-theme-polarbear
 
-> A light theme bases on Even, designed by Giuem.
+> A super light and simple theme.
 
-[在线预览 Demo](https://d2fan.com)
+[Theme Demo](https://d2fan.com)
 
 ![Polar Bear](https://wx3.sinaimg.cn/large/e942863dly1fd36foz16ij21kw0xwjxw.jpg)
 
-## 安装使用（Installation）
+
+# Installation
+
+1.Install plugin `hexo-renderer-scss`.
+
+2.Download the theme to your Hexo theme folder.
+
 ```
 $ npm install hexo-renderer-scss --save
 $ git clone https://github.com/frostfan/hexo-theme-polarbear themes/polarbear
 ```
 
-修改（Change） polarbear/config.yml `theme: polarbear`
+3.Modify `yoursite/_config.yml`
 
 ```
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: polarbear
+```
 
-# 在归档页面显示所有文章 （Show all articles on archive page.）
-# 需要安装(Need to install) hexo-generator-archive 插件支持
+4.Show all posts at your archive page，need to install plugin `hexo-generator-archive`
+```
+$ npm install hexo-generator-archive --save
+```
+
+Add these codes on `yoursite/_config.yml`
+
+```
 archive_generator:
     per_page: 0
     yearly: false
     monthly: false
     daily: false
 ```
+# Theme Config
 
-## ReadmeFirst
-主题较为简陋粗糙，使用及修改时需要对 Hexo 有一定了解。
-The theme is relatively simple and rough, have a certain understanding of Hexo before you use and modify.
+Modify `polarbear/_config.yml`
 
-## 侧边栏
+## Widget Function
 
 ```
 # widget function
@@ -51,16 +63,31 @@ widget_custom:
     content: <p>testing...</p>
 ```
 
-## 增加功能 （More Functions）
-This theme base on [Even](https://github.com/ahonn/hexo-theme-even)
+## Site Analytics
 
-You can find more functions at [Even](https://github.com/ahonn/hexo-theme-even),
-copy and change codes as you want.
+```
+# Baidu Analytics
+baidu_analytics:
+# Google Analytics
+google_analytics:
+```
 
-EX：赞赏（Reward）、底部版权(Copyright)、社交图标(Social icon)
+## Comment Function
 
-## 感谢 (Thanks)
+```
+# Duoshuo
+duoshuo_shortname:
+# Disqus
+disqus_shortname:
+```
+
+## More Functions
+This theme is based on [Even](https://github.com/ahonn/hexo-theme-even)
+
+You can add more features based on it. For example: appreciation, copyright, social icon, etc.
+
+## Thanks
 
 Theme Even author: [ahonn](http://www.ahonn.me/)
 
-Theme style designed by: [Giuem](https://www.giuem.com)
+Theme style is designed by: [Giuem](https://www.giuem.com)
