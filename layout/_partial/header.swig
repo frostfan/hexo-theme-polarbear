@@ -10,11 +10,7 @@
                     <li class="menu-item">
                         <a href="{{ url_for(path) }}">
                             {% set itemName = 'menu.' + name.toLowerCase() %}
-                            {% if itemName.startsWith('menu') %}
-                                {{ name }}
-                            {% else %}
-                                {{ __(itemName) }}
-                            {% endif %}
+                            {{ __(itemName) }}
                         </a>
                     </li>
                 {% endfor %}
