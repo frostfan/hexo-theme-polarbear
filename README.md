@@ -9,12 +9,12 @@
 
 # Installation
 
-1.Install plugin `hexo-renderer-scss` and `hexo-renderer-swig`.
+1.Install plugin `hexo-renderer-swig`.
 
 2.Download the theme to your Hexo theme folder.
 
 ```
-$ npm install hexo-renderer-scss hexo-renderer-swig --save
+$ npm install hexo-renderer-swig --save
 $ git clone https://github.com/frostfan/hexo-theme-polarbear themes/polarbear
 ```
 
