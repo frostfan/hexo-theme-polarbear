@@ -2,7 +2,7 @@
 
 > A super light and simple theme.
 
-[Theme Demo](https://d2fan.com)
+[Theme Demo](https://polarbeardemo-9mbv82pmk-kks-projects-01382f34.vercel.app/)
 
 ![Polar Bear](https://wx3.sinaimg.cn/large/e942863dly1fd36foz16ij21kw0xwjxw.jpg)
 
